@@ -1,0 +1,10 @@
+from customer_example import Customer as cs
+jeff = cs('Jeff Knupp',1000.0)
+ron = cs('Ronald Tuffington', 32402.3)
+print('routing number:',cs.routingNumber)
+print(jeff.name, '$'+str(jeff.balance))
+print(ron.name,'$'+str(ron.balance))
+ron.deposit(103.3)
+print(ron.name,'$'+str(ron.balance))
+ron.withdraw(1232.0)
+print(ron.name,'$'+str(ron.balance))
